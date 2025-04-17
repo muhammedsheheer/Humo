@@ -32,7 +32,7 @@ const Navbar = ({
   return (
     <nav
       className={cn(
-        `${position} top-5 z-50 h-[10vh] w-full pt-0 md:top-0`,
+        `${position} top-5 z-50 h-[10vh] w-full pt-4 md:top-0 md:-mt-4`,
         pathname === "/menu" && "bg-menubackground pt-4",
         pathname !== "/" && `${position} top-5 z-50 h-[10vh] w-full pt-4`,
       )}
@@ -40,22 +40,32 @@ const Navbar = ({
       {/*big screen */}
       <div
         className={
-          pathname === "/"
-            ? "hidden px-4 pt-0 md:block md:px-0"
-            : "px-4 pt-0 md:px-[50px] 2xl:px-[140px]"
+          // pathname === "/"
+          //   ? 
+            "hidden px-4 pt-0 md:block md:px-0"
+            // : "px-4 pt-0 md:px-[50px] 2xl:px-[140px]"
         }
       >
         <div
           className={
-            pathname === "/"
-              ? "flex h-screen w-[22%] flex-col items-center justify-center bg-[#67431C]"
-              : "flex flex-row items-center justify-center"
+            // pathname === "/"
+            //   ?
+               "flex flex-row items-center justify-between bg-[#67431C] px-12 py-3"
+              // : "flex flex-row items-center justify-center"
           }
         >
+          <Image
+            src="/images/logo.png"
+            width={552}
+            height={261}
+            alt="logo"
+            className="w-24 bg-black p-3"
+          />
           <div
             className={
               pathname === "/"
-                ? "flex flex-col items-start gap-8"
+                ? 
+                "mt-2 flex flex-row items-center justify-center gap-14"
                 : "mt-2 flex flex-row items-center justify-center gap-14"
             }
           >
@@ -124,7 +134,7 @@ const Navbar = ({
               />{" "}
               Reservation
             </Link>
-            <Link
+            {/* <Link
               href={"/contact"}
               className="flex flex-row items-center justify-center gap-1 font-open_sans text-xs font-[400] uppercase leading-[25px] tracking-[1.6px] text-[#fff]"
             >
@@ -136,8 +146,13 @@ const Navbar = ({
                 className="h-5 w-2"
               />{" "}
               Contact Us
-            </Link>
+              </Link> */}
           </div>
+          <Link href="/contact">
+            <Button className="rounded-none bg-black px-6 py-6 hover:bg-black">
+              Contact Us
+            </Button>
+          </Link>
         </div>
       </div>
 

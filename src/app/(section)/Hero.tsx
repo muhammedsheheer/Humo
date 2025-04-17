@@ -57,7 +57,7 @@ const Hero: React.FC = () => {
       </video>
 
       <div className="relative z-40 flex h-full flex-col items-center justify-center gap-3 text-white md:ml-16">
-        <div>
+        {/* <div>
           <Image
             src="/images/home/hero/logo.png"
             width={162}
@@ -65,7 +65,7 @@ const Hero: React.FC = () => {
             alt="Foodo"
             className="w-60 md:w-72"
           />
-        </div>
+        </div> */}
       </div>
     </section>
   );
