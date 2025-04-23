@@ -21,10 +21,10 @@ const Special = ({}) => {
           className="h-full w-full object-cover"
         />
       </div>
-      <div className="absolute right-[8%] top-16 z-50 hidden md:block">
+      <div className="absolute right-[8%] top-16 z-40 hidden md:block">
         <Link href={"/menu"}>
           <Button
-            className="relative z-50 mt-4 flex items-center justify-center gap-3 px-10 py-10 uppercase text-[#fff]"
+            className="relative z-40 mt-4 flex items-center justify-center gap-3 px-10 py-10 uppercase text-[#fff]"
             variant="imageInverted"
           >
             View Menu
@@ -59,7 +59,7 @@ const Special = ({}) => {
             </div>
           </div>
         </div>
-        <div className="relative z-50 flex min-h-[400px] w-full flex-col justify-center px-2">
+        <div className="relative z-40 flex min-h-[400px] w-full flex-col justify-center px-2">
           {modelData && <EmblaCarousel slides={modelData} options={OPTIONS} />}
         </div>
       </div>

@@ -9,7 +9,7 @@ const Story: React.FC = () => {
       <div className="absolute right-[15%] top-[74%] hidden md:block">
         <Link href={"/table-booking"}>
           <Button
-            className="relative z-50 mt-4 flex items-center justify-center gap-3 px-10 py-10 uppercase"
+            className="relative z-40 mt-4 flex items-center justify-center gap-3 px-10 py-10 uppercase"
             variant="imageoutline"
           >
             Book Now
