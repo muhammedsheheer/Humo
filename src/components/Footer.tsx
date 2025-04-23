@@ -20,7 +20,8 @@ const Footer = ({}) => {
           </Link>
           <div className="w-full border-b-[1px] border-b-white md:w-[45%]" />
         </div>
-        <div className="flex flex-col items-center justify-center gap-4 md:flex-row md:items-center md:justify-end md:gap-2">
+        {/*big screen */}
+        <div className="hidden flex-col items-center justify-center gap-4 md:flex md:flex-row md:items-center md:justify-end md:gap-2">
           <div className="flex w-full flex-col items-center justify-center gap-8 md:w-[45%] md:flex-row md:items-center md:justify-end md:gap-16">
             <div className="flex flex-col items-center gap-3 md:items-start">
               <Link
@@ -100,7 +101,7 @@ const Footer = ({}) => {
               </div>
               <div className="flex flex-col gap-1">
                 <Link
-                  href={""}
+                  href={"https://maps.app.goo.gl/5USFZV98LGhcRN5A8"}
                   target="_blank"
                   className="text-center font-open_sans text-sm font-[400] uppercase tracking-[2px] text-white md:text-start"
                 >
@@ -138,18 +139,140 @@ const Footer = ({}) => {
             </div>
           </div>
         </div>
-        <div className="flex flex-row items-center justify-center gap-3 md:ml-10">
-          <Link href={""} target="_blank" className="text-white">
+        {/* mobile screen */}
+
+        <div className="flex flex-col items-start justify-start gap-4 md:hidden md:flex-row md:items-center md:justify-end md:gap-2">
+          <div className="flex w-full flex-col items-start justify-start gap-8 md:w-[45%] md:flex-row md:items-center md:justify-end md:gap-16">
+            <div className="flex flex-col items-start gap-3 md:items-start">
+              <Link
+                href={""}
+                className="font-open_sans text-sm font-[400] uppercase tracking-[2px] text-white"
+              >
+                Our Food
+              </Link>
+              <Link
+                href={"/drinks"}
+                className="font-open_sans text-sm font-[400] uppercase tracking-[2px] text-white"
+              >
+                Drinks menu{" "}
+              </Link>
+              <Link
+                href={""}
+                className="font-open_sans text-sm font-[400] uppercase tracking-[2px] text-white"
+              >
+                Private DINING{" "}
+              </Link>
+              <Link
+                href={""}
+                className="font-open_sans text-sm font-[400] uppercase tracking-[2px] text-white"
+              >
+                What’s on{" "}
+              </Link>
+              <Link
+                href={""}
+                className="font-open_sans text-sm font-[400] uppercase tracking-[2px] text-white"
+              >
+                Our policy{" "}
+              </Link>
+            </div>
+            <div className="flex flex-col items-start justify-start gap-3 md:items-start">
+              <Link
+                href={""}
+                className="font-open_sans text-sm font-[400] uppercase tracking-[2px] text-white"
+              >
+                Blog{" "}
+              </Link>
+              <Link
+                href={""}
+                className="font-open_sans text-sm font-[400] uppercase tracking-[2px] text-white"
+              >
+                Press{" "}
+              </Link>
+              <Link
+                href={"/contact"}
+                className="font-open_sans text-sm font-[400] uppercase tracking-[2px] text-white"
+              >
+                Contact us{" "}
+              </Link>
+              <Link
+                href={""}
+                className="font-open_sans text-sm font-[400] uppercase tracking-[2px] text-white"
+              >
+                Career{" "}
+              </Link>
+              <Link
+                href={""}
+                className="font-open_sans text-sm font-[400] uppercase tracking-[2px] text-white"
+              >
+                Find us{" "}
+              </Link>
+            </div>
+          </div>
+          <div className="mr-28 hidden h-[100px] w-full border-r-[1px] border-r-white md:block md:h-[200px] md:w-[10%]" />
+          <div className="flex w-full flex-col items-end justify-end gap-8 md:w-[45%] md:flex-row md:justify-start md:gap-20">
+            <div className="flex flex-col items-end gap-3 md:items-start">
+              <div>
+                <Link
+                  href={""}
+                  className="font-open_sans text-base font-[400] uppercase tracking-[2px] text-white"
+                >
+                  Contact{" "}
+                </Link>
+              </div>
+              <div className="flex flex-col items-end gap-1">
+                <Link
+                  href={"https://maps.app.goo.gl/5USFZV98LGhcRN5A8"}
+                  target="_blank"
+                  className="text-end font-open_sans text-sm font-[400] uppercase tracking-[2px] text-white md:text-start"
+                >
+                  HUMO WATFORD 9 KING STREET <br />
+                  WATFORD WD18 0BW
+                </Link>
+                <Link
+                  href={"mailto:info@humowatford.com"}
+                  className="text-end font-open_sans text-sm font-[400] uppercase tracking-[2px] text-white md:text-start"
+                >
+                  info@humowatford.com
+                </Link>
+                <Link
+                  href={"tele:+44(0)1923586128"}
+                  className="text-end font-open_sans text-sm font-[400] uppercase tracking-[2px] text-white md:text-start"
+                >
+                  +44(0)1923586128
+                </Link>
+              </div>
+            </div>
+            <div className="flex flex-col items-end gap-3 md:items-start">
+              <Link
+                href={""}
+                className="font-open_sans text-sm font-[400] uppercase tracking-[2px] text-white"
+              >
+                Opening hours
+              </Link>
+              <p className="text-end font-open_sans text-sm font-[400] uppercase tracking-[2px] text-white md:text-start">
+                Mon-Thu 17:00 to 22:30
+                <br />
+                Fri 17:00 to 00:30
+                <br />
+                Sat 12:00 to 00:00
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="flex flex-row items-end justify-end gap-3 md:ml-10 md:items-center md:justify-center">
+          <Link
+            href={"https://www.instagram.com/humowatford/?hl=en-gb"}
+            target="_blank"
+            className="text-white"
+          >
             <Icons.instagram />
           </Link>
-          <Link href={""} target="_blank" className="text-white">
+          <Link
+            href={"https://maps.app.goo.gl/5USFZV98LGhcRN5A8"}
+            target="_blank"
+            className="text-white"
+          >
             <Icons.google />
-          </Link>
-          <Link href={""} target="_blank" className="text-white">
-            <Icons.unknown />
-          </Link>
-          <Link href={""} target="_blank" className="text-white">
-            <Icons.facebook />
           </Link>
         </div>
         <div className="flex flex-col gap-2 pb-10">

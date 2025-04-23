@@ -233,7 +233,7 @@ const Navbar = ({
       className={cn(
         `fixed top-0 z-50 w-full transition-all duration-300 ease-in-out`,
         scrollY > 50 ? "bg-black shadow-md" : "bg-transparent",
-        pathname === "/menu" && "bg-menubackground pt-4",
+        pathname === "/menu" && "bg-menubackground pt-0",
       )}
     >
       <div className="hidden px-4 pt-0 md:block md:px-0">
@@ -249,7 +249,7 @@ const Navbar = ({
             <NavLink href="/" label="Home" />
             <NavLink href="/menu" label="Menu" />
             <NavLink href="/about-us" label="About" />
-            <NavLink href="" label="Food & Drinks" />
+            {/* <NavLink href="" label="Food & Drinks" /> */}
             <NavLink href="/table-booking" label="Reservation" />
           </div>
           <Link href="/contact">

@@ -7,24 +7,27 @@ const JoinUs = ({}) => {
     <section
       className="relative flex h-screen w-full items-center justify-center"
       style={{
-        backgroundImage: `url('/images/about-us/image4.jpg')`,
+        backgroundImage: `url('/images/about-us/4.jpg')`,
         backgroundSize: "cover",
       }}
     >
-      <div className="flex h-full w-full flex-col-reverse items-center justify-center gap-4 md:flex-row">
+      <div className="absolute inset-0 bg-black/50" />
+      <div className="z-10 flex h-full w-full flex-col-reverse items-center justify-center gap-4 md:flex-row">
         <div className="flex h-full w-full flex-col items-center justify-center gap-[2.5rem] p-6">
-          <h1 className="max-w-[500px] text-center font-oswald text-5xl leading-[60px] text-[#fff]">
-            Join Us for an
-            <br />
-            Unforgettable Meal
+          <h1 className="max-w-[500px] text-center font-pathway text-5xl text-[#fff] md:leading-[60px]">
+            Experience Fire, Flavor & Elegance
           </h1>
           <p className="max-w-[450px] text-center font-[600] leading-[160%] text-[#ffff]">
-            Whether it`s an intimate dinner or a grand celebration, Nova invites
-            you to indulge in an exceptional culinary journey. From expertly
-            crafted flavors to hand-selected ingredients, every dish reflects
-            our passion for excellence. Immerse yourself in a dining experience
-            where innovation meets tradition, and every bite tells a story.
+            Whether you`re gathering for a romantic evening or a vibrant
+            celebration, <strong>Humo</strong> invites you to indulge in a
+            dining experience fueled by fire and crafted with care. Each dish is
+            a celebration of smoke, flame, and refined technique—bringing
+            together bold flavors and thoughtful presentation.
+            <br />
+            Join us and discover where passion meets the plate, and every bite
+            ignites the senses.
           </p>
+
           <Link href={"/table-booking"}>
             <Button
               variant="outline"

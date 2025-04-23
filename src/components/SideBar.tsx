@@ -60,12 +60,12 @@ const Sidebar: FC<SidebarProps> = ({ children }) => {
             >
               Reservation
             </Link>
-            <Link
+            {/* <Link
               href=""
               className="flex w-full justify-center p-0 text-center font-pathway text-2xl font-normal text-white"
             >
               Food & Drinks
-            </Link>
+            </Link> */}
           </SheetDescription>
         </SheetHeader>
       </SheetContent>

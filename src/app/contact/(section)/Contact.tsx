@@ -88,13 +88,19 @@ const Contact = ({}) => {
                   </div>
                 </div>
                 <div className="flex flex-col gap-4">
-                  <Link href={""} target="_blank">
+                  <Link
+                    href={"https://maps.app.goo.gl/5USFZV98LGhcRN5A8"}
+                    target="_blank"
+                  >
                     <p className="text-[#9C9E9F]">
                       HUMO WATFORD 9 KING STREET <br />
                       WATFORD WD18 0BW
                     </p>
                   </Link>
-                  <Link href={""} target="_blank">
+                  <Link
+                    href={"https://maps.app.goo.gl/5USFZV98LGhcRN5A8"}
+                    target="_blank"
+                  >
                     <p className="flex items-center gap-2 text-sm text-[#9C9E9F]">
                       <span>Get Direction</span>
                       <ArrowRight className="text-[#9C9E9F]" />
@@ -118,23 +124,29 @@ const Contact = ({}) => {
               <div className="flex items-center gap-6">
                 <div>
                   <div className="h-fit w-fit rounded-full p-2">
-                    <Mail />
+                    <Mail className="text-[#9C9E9F]" />
                   </div>
                 </div>
                 <div className="flex flex-col gap-4">
-                  <Link href="mailto:info@humowatford.com" className="">
+                  <Link
+                    className="text-[#9C9E9F]"
+                    href="mailto:info@humowatford.com"
+                  >
                     info@humowatford.com
                   </Link>
                 </div>
               </div>
               <div className="flex items-center justify-start gap-4">
-                <Link href={""} target="_blank">
+                <Link
+                  href={"https://www.instagram.com/humowatford/?hl=en-gb"}
+                  target="_blank"
+                >
                   <Icons.instagram className="text-[#9C9E9F]" />
                 </Link>
-                <Link href={""} target="_blank">
-                  <Icons.unknown className="text-[#9C9E9F]" />
-                </Link>
-                <Link href={""} target="_blank">
+                <Link
+                  href={"https://maps.app.goo.gl/5USFZV98LGhcRN5A8"}
+                  target="_blank"
+                >
                   <Icons.google className="text-[#9C9E9F]" />
                 </Link>
                 {/* <Link href='https://www.facebook.com/Istanbulwoolton/'>
@@ -232,7 +244,7 @@ const Contact = ({}) => {
           </div>
         </div>
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.3518235577612!2d-0.282350023528942!3d51.525106571817304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487611828d8d4ff7%3A0xd0a626f080e14845!2sNova%20Park%20Royal!5e0!3m2!1sen!2sin!4v1740603246277!5m2!1sen!2sin"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2352.8611022181535!2d-0.39688592352082785!3d51.653632971846974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48766b6147fa791f%3A0xf6279f0a91ed23b8!2sHumo%20Watford!5e1!3m2!1sen!2sin!4v1745414858860!5m2!1sen!2sin"
           style={{ border: 0 }}
           allowFullScreen
           loading="lazy"
@@ -243,7 +255,7 @@ const Contact = ({}) => {
       <div className="flex w-full overflow-hidden">
         <Image
           className="h-full w-full object-cover lg:h-[500px]"
-          src="/images/about-us/image5.jpeg"
+          src="/images/about-us/5.jpg"
           alt="bottom"
           width={966}
           height={96}
