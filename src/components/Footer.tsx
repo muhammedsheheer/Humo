@@ -104,19 +104,20 @@ const Footer = ({}) => {
                   target="_blank"
                   className="text-center font-open_sans text-sm font-[400] uppercase tracking-[2px] text-white md:text-start"
                 >
-                  2 Kendal Ave, London W3 0PA
+                  HUMO WATFORD 9 KING STREET <br />
+                  WATFORD WD18 0BW
                 </Link>
                 <Link
-                  href={"mailto:info@novaparkroyal.com"}
+                  href={"mailto:info@humowatford.com"}
                   className="text-center font-open_sans text-sm font-[400] uppercase tracking-[2px] text-white md:text-start"
                 >
-                  info@novaparkroyal.com{" "}
+                  info@humowatford.com
                 </Link>
                 <Link
-                  href={"tele:+442035001710"}
+                  href={"tele:+44(0)1923586128"}
                   className="text-center font-open_sans text-sm font-[400] uppercase tracking-[2px] text-white md:text-start"
                 >
-                  +44 20 3500 1710
+                  +44(0)1923586128
                 </Link>
               </div>
             </div>
@@ -128,9 +129,11 @@ const Footer = ({}) => {
                 Opening hours
               </Link>
               <p className="text-center font-open_sans text-sm font-[400] uppercase tracking-[2px] text-white md:text-start">
-                Mon-Thurs 4pm-1am <br />
-                Fri-Sat 12pm-3am <br />
-                Sun 12pm-1am
+                Mon-Thu 17:00 to 22:30
+                <br />
+                Fri 17:00 to 00:30
+                <br />
+                Sat 12:00 to 00:00
               </p>
             </div>
           </div>

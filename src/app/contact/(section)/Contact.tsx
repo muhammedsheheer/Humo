@@ -14,7 +14,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useMutation } from "@tanstack/react-query";
 import axios from "axios";
-import { ArrowRight, MapPin, Phone } from "lucide-react";
+import { ArrowRight, Mail, MapPin, Phone } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { useForm } from "react-hook-form";
@@ -75,9 +75,6 @@ const Contact = ({}) => {
         <div className="flex w-full flex-col lg:flex-row">
           <div className="flex w-full flex-col gap-8 bg-[#000] px-6 lg:w-1/2 lg:px-28">
             <div className="flex flex-col gap-8">
-              <p className="font-bai text-lg leading-[4px] text-[#fff]">
-                Contact Us
-              </p>
               <h1 className="font-forum text-4xl font-medium uppercase leading-[50px] tracking-[5px] text-[#fff] lg:text-5xl">
                 Get in
                 <br /> Touch
@@ -93,8 +90,8 @@ const Contact = ({}) => {
                 <div className="flex flex-col gap-4">
                   <Link href={""} target="_blank">
                     <p className="text-[#9C9E9F]">
-                      2 Kendal Ave, London W3 0PA,
-                      <br /> United Kingdom
+                      HUMO WATFORD 9 KING STREET <br />
+                      WATFORD WD18 0BW
                     </p>
                   </Link>
                   <Link href={""} target="_blank">
@@ -105,16 +102,7 @@ const Contact = ({}) => {
                   </Link>
                 </div>
               </div>
-              {/* <div className="flex items-center gap-6">
-                <div>
-                  <div className="h-fit w-fit rounded-full p-2">
-                    <Phone />
-                  </div>
-                </div>
-                <div className="flex flex-col gap-4">
-                  <Link href="tel:+441234567890" className="">+44 1234 567890</Link>
-                </div>
-              </div> */}
+
               <div className="flex items-center gap-6">
                 <div>
                   <div className="h-fit w-fit rounded-full p-2">
@@ -122,8 +110,20 @@ const Contact = ({}) => {
                   </div>
                 </div>
                 <div className="flex flex-col gap-4">
-                  <Link href="tel:+442035001710" className="text-[#9C9E9F]">
-                    +44 20 3500 1710{" "}
+                  <Link href="tel:+44(0)1923586128" className="text-[#9C9E9F]">
+                    +44(0)1923586128
+                  </Link>
+                </div>
+              </div>
+              <div className="flex items-center gap-6">
+                <div>
+                  <div className="h-fit w-fit rounded-full p-2">
+                    <Mail />
+                  </div>
+                </div>
+                <div className="flex flex-col gap-4">
+                  <Link href="mailto:info@humowatford.com" className="">
+                    info@humowatford.com
                   </Link>
                 </div>
               </div>
