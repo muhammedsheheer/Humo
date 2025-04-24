@@ -8,6 +8,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import { useRestaurant } from "@/context/RestaurantContext";
+import { motion } from "framer-motion";
 
 const Reviews = ({}) => {
   const { reviews } = useRestaurant();
@@ -16,9 +17,15 @@ const Reviews = ({}) => {
       <div className="flex h-full w-full flex-col items-start justify-center gap-4 py-12 md:gap-8 md:py-44 md:pt-24">
         <div className="flex h-full w-full flex-col items-center justify-center gap-2 lg:gap-4">
           <div className="flex flex-col items-center justify-center gap-2">
-            <h1 className="pb-6 text-center font-pathway text-3xl font-[400] uppercase tracking-[7px] text-[#EB9A3F] md:pb-16 md:text-5xl md:tracking-[14px]">
+            <motion.h1
+              className="pb-6 text-center font-pathway text-3xl font-[400] uppercase tracking-[7px] text-[#662200] md:pb-16 md:text-5xl md:tracking-[14px]"
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: false }}
+              transition={{ duration: 1.5, ease: "easeOut" }}
+            >
               REVIEWS FROM OUR PEOPLE
-            </h1>
+            </motion.h1>
           </div>
         </div>
         <div className="relative flex w-full items-center justify-center p-4 md:p-0">
@@ -51,7 +58,7 @@ const Reviews = ({}) => {
                         index % 2 === 0 ? "mt-4" : "mb-4"
                       }`}
                     >
-                      <div className="flex h-[350px] flex-col gap-6 border border-[#EB9A3F] bg-[#EB9A3F] px-6 py-8">
+                      <div className="flex h-[350px] flex-col gap-6 border border-[#662200] bg-[#662200] px-6 py-8">
                         <div className="mt-8 flex w-full justify-center">
                           {Array.from({ length: review.rating }).map(
                             (_, index) => (
@@ -72,8 +79,8 @@ const Reviews = ({}) => {
                   ))}
               </CarouselContent>
               <div className="group absolute -bottom-12 left-1/2 flex w-fit -translate-x-1/2 transform items-center gap-2 transition-transform duration-300 ease-in-out">
-                <CarouselPrevious className="border-[#EB9A3F] text-[#EB9A3F] transition-transform duration-300 ease-in-out group-hover:-translate-x-2" />
-                <CarouselNext className="border-[#EB9A3F] text-[#EB9A3F] transition-transform duration-300 ease-in-out group-hover:translate-x-2" />
+                <CarouselPrevious className="border-[#662200] text-[#662200] transition-transform duration-300 ease-in-out group-hover:-translate-x-2" />
+                <CarouselNext className="border-[#662200] text-[#662200] transition-transform duration-300 ease-in-out group-hover:translate-x-2" />
               </div>
             </Carousel>
           )}

@@ -232,7 +232,7 @@ const Navbar = ({
     <nav
       className={cn(
         `fixed top-0 z-50 w-full transition-all duration-300 ease-in-out`,
-        scrollY > 50 ? "bg-black shadow-md" : "bg-transparent",
+        scrollY > 50 ? "bg-[#662200] shadow-md" : "bg-transparent",
         pathname === "/menu" && "bg-menubackground pt-0",
       )}
     >
