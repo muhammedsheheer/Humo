@@ -1,7 +1,6 @@
-import { Button } from "@/components/ui/button";
 import Image from "next/image";
-import Link from "next/link";
 import React from "react";
+import { motion } from "framer-motion";
 
 const Unique: React.FC = () => {
   return (
@@ -30,7 +29,13 @@ const Unique: React.FC = () => {
           </div>
         </div>{" "}
         <div className="flex w-full flex-col gap-4 px-4 pt-8 md:flex-row md:px-10">
-          <div className="w-full md:w-[28%]">
+          <motion.div
+            className="w-full md:w-[28%]"
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: false }}
+            transition={{ duration: 1.5, ease: "easeOut" }}
+          >
             <Image
               src={"/images/home/story/1.png"}
               width={281}
@@ -38,9 +43,15 @@ const Unique: React.FC = () => {
               alt="image"
               className="h-auto w-full md:h-full"
             />
-          </div>
+          </motion.div>
 
-          <div className="w-full md:w-[44%]">
+          <motion.div
+            className="w-full md:w-[44%]"
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: false }}
+            transition={{ duration: 1.5, ease: "easeOut" }}
+          >
             <Image
               src={"/images/home/story/2.png"}
               width={281}
@@ -48,8 +59,14 @@ const Unique: React.FC = () => {
               alt="image"
               className="h-auto w-full md:h-full"
             />
-          </div>
-          <div className="w-full md:w-[28%]">
+          </motion.div>
+          <motion.div
+            className="w-full md:w-[28%]"
+            initial={{ opacity: 0, y: -50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: false }}
+            transition={{ duration: 1.5, ease: "easeOut" }}
+          >
             <Image
               src={"/images/home/story/1.png"}
               width={281}
@@ -57,7 +74,7 @@ const Unique: React.FC = () => {
               alt="image"
               className="h-auto w-full md:h-full"
             />
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

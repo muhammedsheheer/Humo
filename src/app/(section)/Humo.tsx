@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import { motion } from "framer-motion";
 
 const Humo: React.FC = () => {
   return (
@@ -12,10 +13,16 @@ const Humo: React.FC = () => {
           <div className="flex w-full flex-col gap-4 md:flex-row">
             <div className="relative w-full md:w-[25%]">
               <div className="absolute bottom-8 left-2 right-2">
-                <h1 className="font-passion_one text-center text-5xl font-[400] uppercase tracking-[10px] text-[#FFC015] md:text-6xl md:tracking-[14px]">
+                <motion.h1
+                  className="text-center font-passion_one text-5xl font-[400] uppercase tracking-[10px] text-[#FFC015] md:text-6xl md:tracking-[14px]"
+                  initial={{ opacity: 0, y: 50, scale: 0.8 }}
+                  whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                  viewport={{ once: false, amount: 0.5 }}
+                  transition={{ duration: 1.5, ease: "easeOut" }}
+                >
                   £21 <br /> WEEKEND <br />
                   LUNCH
-                </h1>
+                </motion.h1>
               </div>
               <Image
                 src={"/images/home/humo/1.png"}
@@ -28,9 +35,15 @@ const Humo: React.FC = () => {
 
             <div className="relative w-full md:w-[25%]">
               <div className="absolute bottom-16 left-2 right-2 md:bottom-28">
-                <h1 className="font-passion_one text-center text-9xl font-[400] uppercase tracking-[-7px] text-[#FFC015] md:text-[130px] md:tracking-[-9px]">
+                <motion.h1
+                  className="text-center font-passion_one text-9xl font-[400] uppercase tracking-[-7px] text-[#FFC015] md:text-[130px] md:tracking-[-9px]"
+                  initial={{ opacity: 0, y: 50, scale: 0.8 }}
+                  whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                  viewport={{ once: false, amount: 0.5 }}
+                  transition={{ duration: 1.5, ease: "easeOut" }}
+                >
                   DJ
-                </h1>
+                </motion.h1>
               </div>{" "}
               <Image
                 src={"/images/home/humo/2.png"}
@@ -42,14 +55,20 @@ const Humo: React.FC = () => {
             </div>
             <div className="relative w-full md:w-[50%]">
               <div className="absolute bottom-1 right-0">
-                <h1 className="font-passion_one text-right text-4xl font-[400] uppercase tracking-[7px] text-[#FFC015] md:text-6xl md:tracking-[7px]">
+                <motion.h1
+                  className="text-right font-passion_one text-4xl font-[400] uppercase tracking-[7px] text-[#FFC015] md:text-6xl md:tracking-[7px]"
+                  initial={{ opacity: 0, y: 50, scale: 0.8 }}
+                  whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                  viewport={{ once: false, amount: 0.5 }}
+                  transition={{ duration: 1.5, ease: "easeOut" }}
+                >
                   <span className="text-3xl text-[#fff] md:text-5xl">
                     £29.90
                   </span>{" "}
                   <br />
                   TUES-THURSDAY <br />
                   DINNERS
-                </h1>
+                </motion.h1>
               </div>{" "}
               <Image
                 src={"/images/home/humo/3.png"}
@@ -63,10 +82,16 @@ const Humo: React.FC = () => {
           <div className="flex w-full flex-col gap-4 md:flex-row">
             <div className="relative flex w-full items-center justify-center md:w-[25%]">
               <div className="absolute bottom-1 left-2 right-2">
-                <h1 className="font-passion_one text-center text-6xl font-[400] uppercase tracking-[5px] text-[#FFC015] md:text-7xl md:tracking-[5px]">
+                <motion.h1
+                  className="text-center font-passion_one text-6xl font-[400] uppercase tracking-[5px] text-[#FFC015] md:text-7xl md:tracking-[5px]"
+                  initial={{ opacity: 0, y: 50, scale: 0.8 }}
+                  whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                  viewport={{ once: false, amount: 0.5 }}
+                  transition={{ duration: 1.5, ease: "easeOut" }}
+                >
                   Private <br />
                   booking
-                </h1>
+                </motion.h1>
               </div>{" "}
               <Image
                 src={"/images/home/humo/4.png"}
@@ -78,11 +103,17 @@ const Humo: React.FC = () => {
             </div>
             <div className="relative w-full md:w-[50%]">
               <div className="absolute bottom-1 right-0 md:bottom-10">
-                <h1 className="font-passion_one text-center text-6xl font-[400] uppercase tracking-[7px] text-[#FFC015] md:text-7xl md:tracking-[7px]">
+                <motion.h1
+                  className="text-center font-passion_one text-6xl font-[400] uppercase tracking-[7px] text-[#FFC015] md:text-7xl md:tracking-[7px]"
+                  initial={{ opacity: 0, y: 50, scale: 0.8 }}
+                  whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                  viewport={{ once: false, amount: 0.5 }}
+                  transition={{ duration: 1.5, ease: "easeOut" }}
+                >
                   THE <br />
                   TEXISH <br />
                   BBQ
-                </h1>
+                </motion.h1>
               </div>{" "}
               <Image
                 src={"/images/home/humo/5.png"}
@@ -95,10 +126,16 @@ const Humo: React.FC = () => {
 
             <div className="relative md:w-[25%]">
               <div className="absolute bottom-1 right-0">
-                <h1 className="font-passion_one text-center text-6xl font-[400] uppercase tracking-[7px] text-[#FFC015] md:text-7xl md:tracking-[7px]">
+                <motion.h1
+                  className="text-center font-passion_one text-6xl font-[400] uppercase tracking-[7px] text-[#FFC015] md:text-7xl md:tracking-[7px]"
+                  initial={{ opacity: 0, y: 50, scale: 0.8 }}
+                  whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                  viewport={{ once: false, amount: 0.5 }}
+                  transition={{ duration: 1.5, ease: "easeOut" }}
+                >
                   CORKAGE <br />
                   MONDAYS
-                </h1>
+                </motion.h1>
               </div>{" "}
               <Image
                 src={"/images/home/humo/6.png"}

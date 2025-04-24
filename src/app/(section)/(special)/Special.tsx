@@ -5,6 +5,7 @@ import { useRestaurant } from "@/context/RestaurantContext";
 import type { EmblaOptionsType } from "embla-carousel";
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 const OPTIONS: EmblaOptionsType = { loop: true };
 
@@ -36,7 +37,7 @@ const Special = ({}) => {
         <div className="flex w-full flex-col items-center justify-center gap-3 md:flex-row">
           <div className="flex flex-col items-center justify-center gap-2">
             <div className="flex flex-col items-center justify-center gap-2">
-              <h6
+              <motion.h6
                 className="text-center font-pathway text-4xl font-[400] uppercase tracking-[8px] md:text-5xl md:tracking-[14px]"
                 style={{
                   background:
@@ -45,9 +46,13 @@ const Special = ({}) => {
                   WebkitTextFillColor: "transparent",
                   backgroundClip: "text",
                 }}
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: false }}
+                transition={{ duration: 1.5, ease: "easeOut" }}
               >
                 HUMO IS SMOKE
-              </h6>
+              </motion.h6>
               <Link href={"/menu"}>
                 <Button
                   className="relative z-40 mt-4 flex items-center justify-center gap-3 px-10 py-10 uppercase text-[#fff] md:hidden"

@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { motion } from "framer-motion";
 
 const Menu: React.FC = () => {
   return (
@@ -20,12 +21,16 @@ const Menu: React.FC = () => {
         </div>{" "}
         <div className="flex w-full flex-col gap-4 px-4 pt-8 md:flex-row md:px-0">
           <div className="w-full rounded-t-full bg-[#000] md:mt-14 md:w-[30%]">
-            <Image
+            <motion.img
               src={"/images/home/story/image1.png"}
               width={281}
               height={74}
               alt="image"
               className="h-auto w-full"
+              initial={{ opacity: 0, y: 50, scale: 0.8 }}
+              whileInView={{ opacity: 1, y: 0, scale: 1 }}
+              viewport={{ once: false, amount: 0.5 }}
+              transition={{ duration: 1.5, ease: "easeOut" }}
             />
             <div className="py-6">
               <h1 className="text-center font-inter text-xl font-[400] uppercase text-[#fff] md:text-3xl md:tracking-[4px]">
@@ -35,12 +40,16 @@ const Menu: React.FC = () => {
           </div>
 
           <div className="w-full rounded-t-full bg-[#000] pl-6 pr-6 pt-6 md:w-[40%] md:pl-12 md:pr-12 md:pt-12">
-            <Image
+            <motion.img
               src={"/images/home/story/image2.png"}
               width={281}
               height={74}
               alt="image"
               className="h-auto w-full md:mt-8"
+              initial={{ opacity: 0, y: 50, scale: 0.8 }}
+              whileInView={{ opacity: 1, y: 0, scale: 1 }}
+              viewport={{ once: false, amount: 0.5 }}
+              transition={{ duration: 1.5, ease: "easeOut" }}
             />
             <div className="py-6 md:mt-6">
               <h1 className="text-center font-inter text-xl font-[400] uppercase text-[#fff] md:text-3xl md:tracking-[4px]">
@@ -49,12 +58,16 @@ const Menu: React.FC = () => {
             </div>
           </div>
           <div className="w-full rounded-t-full bg-[#000] md:mt-14 md:w-[30%]">
-            <Image
+            <motion.img
               src={"/images/home/story/image3.png"}
               width={281}
               height={74}
               alt="image"
               className="h-auto w-full"
+              initial={{ opacity: 0, y: 50, scale: 0.8 }}
+              whileInView={{ opacity: 1, y: 0, scale: 1 }}
+              viewport={{ once: false, amount: 0.5 }}
+              transition={{ duration: 1.5, ease: "easeOut" }}
             />
             <div className="py-6">
               <h1 className="text-center font-inter text-xl font-[400] uppercase text-[#fff] md:text-3xl md:tracking-[4px]">
