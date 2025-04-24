@@ -263,7 +263,7 @@ const Footer = ({}) => {
           <Link
             href={"https://www.instagram.com/humowatford/?hl=en-gb"}
             target="_blank"
-            className="text-white"
+            className="text-[#fff]"
           >
             <Icons.instagram />
           </Link>
