@@ -23,7 +23,7 @@ const Footer = ({}) => {
         {/*big screen */}
         <div className="hidden flex-col items-center justify-center gap-4 md:flex md:flex-row md:items-center md:justify-end md:gap-2">
           <div className="flex w-full flex-col items-center justify-center gap-8 md:w-[45%] md:flex-row md:items-center md:justify-end md:gap-16">
-            <div className="flex flex-col items-center gap-3 md:items-start">
+            {/* <div className="flex flex-col items-center gap-3 md:items-start">
               <Link
                 href={""}
                 className="font-open_sans text-sm font-[400] uppercase tracking-[2px] text-white"
@@ -54,19 +54,19 @@ const Footer = ({}) => {
               >
                 Our policy{" "}
               </Link>
-            </div>
+            </div> */}
             <div className="flex flex-col items-center justify-center gap-3 md:items-start">
               <Link
-                href={""}
+                href={"/"}
                 className="font-open_sans text-sm font-[400] uppercase tracking-[2px] text-white"
               >
-                Blog{" "}
+                Home{" "}
               </Link>
               <Link
-                href={""}
+                href={"/menu"}
                 className="font-open_sans text-sm font-[400] uppercase tracking-[2px] text-white"
               >
-                Press{" "}
+                Menu{" "}
               </Link>
               <Link
                 href={"/contact"}
@@ -75,16 +75,16 @@ const Footer = ({}) => {
                 Contact us{" "}
               </Link>
               <Link
-                href={""}
+                href={"/about-us"}
                 className="font-open_sans text-sm font-[400] uppercase tracking-[2px] text-white"
               >
-                Career{" "}
+                About{" "}
               </Link>
               <Link
-                href={""}
+                href={"/table-booking"}
                 className="font-open_sans text-sm font-[400] uppercase tracking-[2px] text-white"
               >
-                Find us{" "}
+                Booking{" "}
               </Link>
             </div>
           </div>
@@ -143,7 +143,7 @@ const Footer = ({}) => {
 
         <div className="flex flex-col items-start justify-start gap-4 md:hidden md:flex-row md:items-center md:justify-end md:gap-2">
           <div className="flex w-full flex-col items-start justify-start gap-8 md:w-[45%] md:flex-row md:items-center md:justify-end md:gap-16">
-            <div className="flex flex-col items-start gap-3 md:items-start">
+            {/* <div className="flex flex-col items-start gap-3 md:items-start">
               <Link
                 href={""}
                 className="font-open_sans text-sm font-[400] uppercase tracking-[2px] text-white"
@@ -174,19 +174,19 @@ const Footer = ({}) => {
               >
                 Our policy{" "}
               </Link>
-            </div>
+            </div> */}
             <div className="flex flex-col items-start justify-start gap-3 md:items-start">
               <Link
-                href={""}
+                href={"/"}
                 className="font-open_sans text-sm font-[400] uppercase tracking-[2px] text-white"
               >
-                Blog{" "}
+                Home{" "}
               </Link>
               <Link
-                href={""}
+                href={"/menu"}
                 className="font-open_sans text-sm font-[400] uppercase tracking-[2px] text-white"
               >
-                Press{" "}
+                Menu{" "}
               </Link>
               <Link
                 href={"/contact"}
@@ -195,16 +195,16 @@ const Footer = ({}) => {
                 Contact us{" "}
               </Link>
               <Link
-                href={""}
+                href={"/about-us"}
                 className="font-open_sans text-sm font-[400] uppercase tracking-[2px] text-white"
               >
-                Career{" "}
+                About{" "}
               </Link>
               <Link
-                href={""}
+                href={"/table-booking"}
                 className="font-open_sans text-sm font-[400] uppercase tracking-[2px] text-white"
               >
-                Find us{" "}
+                Booking{" "}
               </Link>
             </div>
           </div>
