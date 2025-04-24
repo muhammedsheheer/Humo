@@ -8,9 +8,12 @@ const Menu: React.FC = () => {
   return (
     <section
       className="relative h-full w-full bg-[#FFF] pt-12 md:pt-28"
+      // style={{
+      //   background:
+      //     "linear-gradient(180deg, rgba(153,96,32,0.60) -77.68%, #33200B 100%)",
+      // }}
       style={{
-        background:
-          "linear-gradient(180deg, rgba(153,96,32,0.60) -77.68%, #33200B 100%)",
+        background: "linear-gradient(180deg, #662200 -77.68%, #662200 100%)",
       }}
     >
       <div className="flex flex-col gap-4 md:gap-8">

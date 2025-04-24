@@ -38,14 +38,14 @@ const Special = ({}) => {
           <div className="flex flex-col items-center justify-center gap-2">
             <div className="flex flex-col items-center justify-center gap-2">
               <motion.h6
-                className="text-center font-pathway text-4xl font-[400] uppercase tracking-[8px] md:text-5xl md:tracking-[14px]"
-                style={{
-                  background:
-                    "linear-gradient(357deg, #000 -56.07%, #FFA744 129.41%)",
-                  WebkitBackgroundClip: "text",
-                  WebkitTextFillColor: "transparent",
-                  backgroundClip: "text",
-                }}
+                className="text-center font-pathway text-4xl font-[400] uppercase tracking-[8px] text-[#662200] md:text-5xl md:tracking-[14px]"
+                // style={{
+                //   background:
+                //     "linear-gradient(357deg, #000 -56.07%, #FFA744 129.41%)",
+                //   WebkitBackgroundClip: "text",
+                //   WebkitTextFillColor: "transparent",
+                //   backgroundClip: "text",
+                // }}
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: false }}

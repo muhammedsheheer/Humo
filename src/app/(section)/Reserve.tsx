@@ -15,7 +15,7 @@ const Reserve: React.FC = () => {
           viewport={{ once: false, amount: 0.5 }}
           transition={{ duration: 1.5, ease: "easeOut" }}
         >
-          <h1 className="text-center font-pathway text-xl font-[400] uppercase tracking-[5px] text-[#FFA746] md:text-3xl md:tracking-[8px]">
+          <h1 className="text-center font-pathway text-xl font-[400] uppercase tracking-[5px] text-[#662200] md:text-3xl md:tracking-[8px]">
             Reserve <br />
             Your Table
           </h1>

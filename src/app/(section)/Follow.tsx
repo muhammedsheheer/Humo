@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { motion } from "framer-motion";
+import { Icons } from "@/components/Icon";
 
 const Follow: React.FC = () => {
   return (
@@ -9,7 +10,7 @@ const Follow: React.FC = () => {
       <div className="flex flex-col gap-8 md:gap-20">
         <div className="flex w-full flex-col gap-4 px-4 md:px-[60px] 2xl:px-[120px]">
           <motion.h1
-            className="pb-6 text-center font-pathway text-3xl font-[400] uppercase tracking-[7px] text-[#EB9A3F] md:pb-16 md:text-5xl md:tracking-[14px]"
+            className="pb-6 text-center font-pathway text-3xl font-[400] uppercase tracking-[7px] text-[#662200] md:pb-16 md:text-5xl md:tracking-[14px]"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: false }}
@@ -40,18 +41,19 @@ const Follow: React.FC = () => {
               transition={{ duration: 1.5, ease: "easeOut" }}
             >
               {" "}
-              <Image
+              {/* <Image
                 src={"/images/home/follow/insta.svg"}
                 width={160}
                 height={160}
                 alt="logo"
                 className="w-12"
-              />
+              /> */}
+              <Icons.instagram className="h-24 w-24 text-[#662200]" />
               <div>
                 <Link
                   href={"https://www.instagram.com/humowatford/?hl=en-gb"}
                   target="_blank"
-                  className="text-md text-center font-open_sans font-[400] uppercase text-[#EB9A3F] md:text-xl"
+                  className="text-md text-center font-open_sans font-[400] uppercase text-[#662200] md:text-xl"
                 >
                   @humowatford
                 </Link>

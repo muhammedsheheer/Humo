@@ -44,13 +44,13 @@ const Story: React.FC = () => {
 
       <div className="absolute left-[25%] top-[5%]">
         <motion.h6
-          className="hidden text-center font-open_sans text-[500px] font-[400] uppercase md:block"
-          style={{
-            background: "linear-gradient(180deg, #FFA744 0.01%, #000 127.14%)",
-            backgroundClip: "text",
-            WebkitBackgroundClip: "text",
-            WebkitTextFillColor: "transparent",
-          }}
+          className="hidden text-center font-open_sans text-[500px] font-[400] uppercase text-[#662200] md:block"
+          // style={{
+          //   background: "linear-gradient(180deg, #FFA744 0.01%, #000 127.14%)",
+          //   backgroundClip: "text",
+          //   WebkitBackgroundClip: "text",
+          //   WebkitTextFillColor: "transparent",
+          // }}
           initial={{ opacity: 0, rotate: 45 }}
           whileInView={{ opacity: 1, rotate: 0 }}
           viewport={{ once: false }}
@@ -68,14 +68,14 @@ const Story: React.FC = () => {
           transition={{ duration: 1.2, delay: 0.3, ease: "easeInOut" }}
         >
           <h6
-            className="text-center font-pathway text-4xl font-[400] uppercase tracking-[8px] md:text-5xl md:tracking-[14px]"
-            style={{
-              background:
-                "linear-gradient(357deg, #000 -56.07%, #FFA744 129.41%)",
-              WebkitBackgroundClip: "text",
-              WebkitTextFillColor: "transparent",
-              backgroundClip: "text",
-            }}
+            className="text-center font-pathway text-4xl font-[400] uppercase tracking-[8px] text-[#662200] md:text-5xl md:tracking-[14px]"
+            // style={{
+            //   background:
+            //     "linear-gradient(357deg, #000 -56.07%, #FFA744 129.41%)",
+            //   WebkitBackgroundClip: "text",
+            //   WebkitTextFillColor: "transparent",
+            //   backgroundClip: "text",
+            // }}
           >
             THE HEART BEHIND OUR PLATES
           </h6>

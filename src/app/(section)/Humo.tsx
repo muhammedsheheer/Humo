@@ -7,14 +7,14 @@ const Humo: React.FC = () => {
     <section className="relative h-full w-full bg-[#000] pt-12 md:pt-24">
       <div className="flex flex-col gap-8 md:gap-20">
         <div className="flex w-full flex-col gap-4 px-4 md:px-[60px]">
-          <h1 className="pb-6 text-center font-pathway text-3xl font-[400] uppercase tracking-[7px] text-[#EB9A3F] md:pb-16 md:text-5xl md:tracking-[14px]">
+          <h1 className="pb-6 text-center font-pathway text-3xl font-[400] uppercase tracking-[7px] text-[#662200] md:pb-16 md:text-5xl md:tracking-[14px]">
             Humo
           </h1>
           <div className="flex w-full flex-col gap-4 md:flex-row">
             <div className="relative w-full md:w-[25%]">
               <div className="absolute bottom-8 left-2 right-2">
                 <motion.h1
-                  className="text-center font-passion_one text-5xl font-[400] uppercase tracking-[10px] text-[#FFC015] md:text-6xl md:tracking-[14px]"
+                  className="text-center font-passion_one text-5xl font-[400] uppercase tracking-[10px] text-[#662200] md:text-6xl md:tracking-[14px]"
                   initial={{ opacity: 0, y: 50, scale: 0.8 }}
                   whileInView={{ opacity: 1, y: 0, scale: 1 }}
                   viewport={{ once: false, amount: 0.5 }}
@@ -36,7 +36,7 @@ const Humo: React.FC = () => {
             <div className="relative w-full md:w-[25%]">
               <div className="absolute bottom-16 left-2 right-2 md:bottom-28">
                 <motion.h1
-                  className="text-center font-passion_one text-9xl font-[400] uppercase tracking-[-7px] text-[#FFC015] md:text-[130px] md:tracking-[-9px]"
+                  className="text-center font-passion_one text-9xl font-[400] uppercase tracking-[-7px] text-[#662200] md:text-[130px] md:tracking-[-9px]"
                   initial={{ opacity: 0, y: 50, scale: 0.8 }}
                   whileInView={{ opacity: 1, y: 0, scale: 1 }}
                   viewport={{ once: false, amount: 0.5 }}
@@ -56,13 +56,13 @@ const Humo: React.FC = () => {
             <div className="relative w-full md:w-[50%]">
               <div className="absolute bottom-1 right-0">
                 <motion.h1
-                  className="text-right font-passion_one text-4xl font-[400] uppercase tracking-[7px] text-[#FFC015] md:text-6xl md:tracking-[7px]"
+                  className="text-right font-passion_one text-4xl font-[400] uppercase tracking-[7px] text-[#662200] md:text-6xl md:tracking-[7px]"
                   initial={{ opacity: 0, y: 50, scale: 0.8 }}
                   whileInView={{ opacity: 1, y: 0, scale: 1 }}
                   viewport={{ once: false, amount: 0.5 }}
                   transition={{ duration: 1.5, ease: "easeOut" }}
                 >
-                  <span className="text-3xl text-[#fff] md:text-5xl">
+                  <span className="text-3xl text-[#662200] md:text-5xl">
                     £29.90
                   </span>{" "}
                   <br />
@@ -83,7 +83,7 @@ const Humo: React.FC = () => {
             <div className="relative flex w-full items-center justify-center md:w-[25%]">
               <div className="absolute bottom-1 left-2 right-2">
                 <motion.h1
-                  className="text-center font-passion_one text-6xl font-[400] uppercase tracking-[5px] text-[#FFC015] md:text-7xl md:tracking-[5px]"
+                  className="text-center font-passion_one text-6xl font-[400] uppercase tracking-[5px] text-[#662200] md:text-7xl md:tracking-[5px]"
                   initial={{ opacity: 0, y: 50, scale: 0.8 }}
                   whileInView={{ opacity: 1, y: 0, scale: 1 }}
                   viewport={{ once: false, amount: 0.5 }}
@@ -104,7 +104,7 @@ const Humo: React.FC = () => {
             <div className="relative w-full md:w-[50%]">
               <div className="absolute bottom-1 right-0 md:bottom-10">
                 <motion.h1
-                  className="text-center font-passion_one text-6xl font-[400] uppercase tracking-[7px] text-[#FFC015] md:text-7xl md:tracking-[7px]"
+                  className="text-center font-passion_one text-6xl font-[400] uppercase tracking-[7px] text-[#662200] md:text-7xl md:tracking-[7px]"
                   initial={{ opacity: 0, y: 50, scale: 0.8 }}
                   whileInView={{ opacity: 1, y: 0, scale: 1 }}
                   viewport={{ once: false, amount: 0.5 }}
@@ -127,7 +127,7 @@ const Humo: React.FC = () => {
             <div className="relative md:w-[25%]">
               <div className="absolute bottom-1 right-0">
                 <motion.h1
-                  className="text-center font-passion_one text-6xl font-[400] uppercase tracking-[7px] text-[#FFC015] md:text-7xl md:tracking-[7px]"
+                  className="text-center font-passion_one text-6xl font-[400] uppercase tracking-[7px] text-[#662200] md:text-7xl md:tracking-[7px]"
                   initial={{ opacity: 0, y: 50, scale: 0.8 }}
                   whileInView={{ opacity: 1, y: 0, scale: 1 }}
                   viewport={{ once: false, amount: 0.5 }}
