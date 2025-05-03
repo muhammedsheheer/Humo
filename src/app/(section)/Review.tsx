@@ -44,7 +44,7 @@ const Reviews = ({}) => {
           </div> */}
           {reviews && (
             <Carousel className="w-full px-4">
-              <CarouselContent className="flex w-full justify-center gap-4 md:ml-4">
+              <CarouselContent>
                 {reviews
                   .filter((review) => review.rating >= 4)
                   .map((review, index) => (
